@@ -1,0 +1,15 @@
+.myPhotoWrapper {
+    float: left;
+    background-size: cover;
+    width: 20%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.myPhoto {
+    border: 3px solid lightgreen;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    max-height:100%
+}

@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import About from "./components/Main/About/About";
+import Footer from "./components/Footer/Footer";
+import LandingPage from "./components/Main/LandingPage/LandingPage";
+import { Switch, Route, Router, withRouter} from 'react-router-dom';
+import ProjectContainer from "./components/Main/LandingPage/componentsLandingPage/Projects/ProjectContainer";
+import Home from "./components/Main/Home/Home";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className="App-main">      
+        <Switch>    
+          <Route path="/projects" exact component={Home}/>
+          <Route path="/projects/:projectId" component={ProjectContainer}/> 
+
+          <Route path="/about" component={About}/>
+          <Route path="/contact" render={ () => <div> Contact </div>}/>
+
+          <Route path="/" exact component={LandingPage}/>
+        </Switch>
+      </div>
+      <Footer />
     </div>
   );
 }
