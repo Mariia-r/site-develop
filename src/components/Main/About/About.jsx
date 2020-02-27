@@ -4,7 +4,7 @@ class About extends React.Component {
     render() {
         return (
             <div>
-                <h3><b>About us</b></h3>
+                <h3>About us</h3>
                 <div>
                     <p>
                         Divide have don't man where in air fourth. Own itself make have night w'ont make.

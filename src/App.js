@@ -6,6 +6,7 @@ import LandingPage from "./components/Main/LandingPage/LandingPage";
 import { Switch, Route, Router, withRouter} from 'react-router-dom';
 import ProjectContainer from "./components/Main/LandingPage/componentsLandingPage/Projects/ProjectContainer";
 import Home from "./components/Main/Home/Home";
+import ContactPage from './components/Main/Contact/ContactPage';
 
 function App(props) {
   return (
@@ -17,7 +18,7 @@ function App(props) {
           <Route path="/projects/:projectId" component={ProjectContainer}/> 
 
           <Route path="/about" component={About}/>
-          <Route path="/contact" render={ () => <div> Contact </div>}/>
+          <Route path="/contact" component={ContactPage}/>
 
           <Route path="/" exact component={LandingPage}/>
         </Switch>

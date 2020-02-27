@@ -46,7 +46,7 @@ function Services() {
             </div>
             <div className="unit-process">
                 <div><FaFillDrip size={'3em'}/></div>
-                <div style={{"fontWeight": "bold"}}>ILLUSTRATIONS</div>
+                <b>ILLUSTRATIONS</b>
                 <div>Whales likeness hath, man kind for them air two won't</div>
             </div>
         </div> 

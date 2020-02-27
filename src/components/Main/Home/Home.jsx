@@ -6,7 +6,7 @@ function Home() {
     return(
         <div>
             <div className={css.pageAboutText}>
-                <h3><b>UI / UX &amp; Graphic Designer</b></h3>
+                <h3>UI / UX &amp; Graphic Designer</h3>
                 <div>I am a Graphic &amp; Web Designer based in New York, specializing in User Interface Design and Development</div>
             </div>
             <Projects/>
