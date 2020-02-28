@@ -6,7 +6,7 @@ class Resume extends React.Component {
     render() {
         return (
             <div className="resume">
-                <b>Mariia Riabtsun</b>
+                Mariia Riabtsun
                 <div className={css.myPhotoWrapper}><img src={img} className={css.myPhoto}/></div>
                 <div>
                     <p>Date of birth: 14 July, 1993</p>

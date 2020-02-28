@@ -15,7 +15,7 @@ class LandingPage extends React.Component {
             <div>
                 <div className="wrapper-descriptionBlock">
                     <div className="descriptionBlock">
-                        <h2><b>We Design and Develop</b></h2>
+                        <h2>We Design and Develop</h2>
                         <p>
                             We are a new design studio based in USA. We have over 
                             
@@ -30,7 +30,7 @@ class LandingPage extends React.Component {
 
 
                 <div className="aboutUs">
-                    <h3><b>About us</b></h3>
+                    <h3>About us</h3>
                     <div>
                         <p>
                             Divide have don't man where in air fourth. Own itself make have night w'ont make. 
@@ -56,8 +56,8 @@ class LandingPage extends React.Component {
                 <ControlledCarousel/>
 
                 <LogoClients/>    
-
-                <FormContainer/>     
+  
+                <FormContainer/>                 
             </div>
         )
     }

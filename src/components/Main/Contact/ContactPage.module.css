@@ -1,0 +1,24 @@
+.contactPage {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 5%;
+}
+
+.wrapperFormContainer div[class="form-content"] {
+    padding: 0%;
+    padding-left: 5%;
+}
+
+
+
+@media(max-width: 411px) {
+    .contactPage {
+        display: block;
+    }
+
+    .wrapperFormContainer div[class="form-content"] {
+        padding-left: 0%;
+        text-align: center;
+    }
+}

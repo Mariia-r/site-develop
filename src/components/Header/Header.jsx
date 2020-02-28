@@ -1,16 +1,31 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {withRouter} from 'react-router-dom';
-import {Fragment} from "react";
+import $ from "jquery";
 
 class Header extends React.Component {
     constructor(props) {
         super(props)
     }
 
+    componentDidMount() {
+        $("#navAnchor").on("click","a", function (event) {
+            event.preventDefault();         
+            let id  = $(this).attr('href'),
+            top = $(id).offset().top;
+            $('.navbar-collapse').collapse('hide');
+            $('body,html').animate({scrollTop: top - 50}, 1500);
+        });
+
+        $("#navMain").on("click","a", function (event) {
+            $('.navbar-collapse').collapse('hide');
+        });   
+    }
+
     render() {
         let hidden = {"display" : "none"};
         let show ={"display" : "flex"};
+        const locationPath = this.props.location.pathname;
         return (
             <header className="App-header">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light static-top">
@@ -22,17 +37,18 @@ class Header extends React.Component {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav ml-auto">
+                            <ul className="navbar-nav ml-auto" id="navMain">
                                 <li className="nav-item active">
-                                    <Link to="/projects" className="nav-link">HOME</Link>
+                                    <Link to={locationPath  == "/" ? "/projects" : "/"} className="nav-link">HOME</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/about" className="nav-link">ABOUT</Link>
                                 </li>
 
-                                <ul className="navbar-nav"
-                                    style={this.props.location.pathname !== '/' ? hidden : show }> 
-                                     
+                                <ul id="navAnchor"
+                                    className="navbar-nav"
+                                    style={locationPath  !== '/' ? hidden : show }> 
+
                                     <li className="nav-item">
                                         <a href="#projects" className="nav-link">PROJECTS</a>
                                     </li>

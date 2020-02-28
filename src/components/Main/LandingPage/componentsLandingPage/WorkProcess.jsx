@@ -5,7 +5,7 @@ function WorkProcess () {
     return (<div id="process">
                 <div className="wrapper-workProcess">
                     <div>
-                        <h3><b>OUR WORK PROCESS</b></h3>
+                        <h3>OUR WORK PROCESS</h3>
                         <p>
                             Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.
                         </p>

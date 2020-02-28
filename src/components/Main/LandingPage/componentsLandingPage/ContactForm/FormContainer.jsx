@@ -8,8 +8,8 @@ function FormContainer() {
                 <h3>Need a Project?</h3>
                 <p>Let us what're you looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
                 <ContactForm/>
-            </div>       
-        </div>
+            </div>
+        </div>      
     )
 }
 
