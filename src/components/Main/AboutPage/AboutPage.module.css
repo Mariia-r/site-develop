@@ -1,0 +1,28 @@
+.introduce {
+    background-image: url(../../../assets/images/bg_aboutMe.png);
+    background-size: cover;
+    height: 300px;
+    padding: 100px 10px;
+    color: white;
+}
+
+.wrapperAboutMe {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../../../assets/images/poster.jpg);
+    background-size: cover;
+}
+
+.aboutMe {
+    position: relative;
+    text-align: left;
+    max-width: 30em; 
+    margin-left: auto;
+    margin-right: 5em;
+    padding: 10% 5%;
+}
+
+.toContact {
+    padding: 5%;
+}

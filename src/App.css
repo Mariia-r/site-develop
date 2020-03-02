@@ -5,12 +5,15 @@
 
 .header-ul-onlyOnePage {
   display: flex;
-  
 }
 
 .App-footer {
   background-color: black;
   color: whitesmoke;
+}
+
+.bg-light {
+  background-color: white !important;
 }
 
 .App-main {
@@ -57,7 +60,7 @@ h2, h3, p {
 
 button {
   background-color: lightseagreen;
-  padding: 3% 9%;
+  padding: 15px 45px;
   color: white;
   border-style: none;
 }
@@ -146,11 +149,23 @@ a:hover {
   padding-top: 25%;
 }
 
-.block-project:hover {
-  color: white;
-  background: rgba(0,0,0,.5);  
+.block-project-landing:hover {
   opacity: 0.5;
   transition: 1s;
+}
+
+.block-project:hover .project__BGOnHover {
+  background-color: lightseagreen;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+.project__BGOnHover {
+  position: absolute; 
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
 }
 
 .project_icon-eye {

@@ -47,7 +47,7 @@ class LandingPage extends React.Component {
 
                 <WorkStatistic/>
 
-                <Projects/>
+                <Projects page="landing"/>
 
                 <WorkProcess/>
 

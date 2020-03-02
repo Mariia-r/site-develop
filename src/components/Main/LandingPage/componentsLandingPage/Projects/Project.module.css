@@ -1,0 +1,13 @@
+.wrapperProject {
+    display: flex;
+}
+.wrapperProject > div {
+    width: 50%;
+}
+
+.projectInfo {
+    padding: 50px;
+    background-color: whitesmoke;
+    text-align: left;
+}
+

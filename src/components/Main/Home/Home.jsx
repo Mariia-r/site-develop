@@ -9,7 +9,7 @@ function Home() {
                 <h3>UI / UX &amp; Graphic Designer</h3>
                 <div>I am a Graphic &amp; Web Designer based in New York, specializing in User Interface Design and Development</div>
             </div>
-            <Projects/>
+            <Projects page="home"/>
         </div>
     )
 }
