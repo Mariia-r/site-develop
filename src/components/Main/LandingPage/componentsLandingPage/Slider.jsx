@@ -17,7 +17,7 @@ function ControlledCarousel() {
           <div className="d-block w-100"/>
           <Carousel.Caption>
             <p>"Work hard to get what you like, otherwise you'll be forced to just like what you get."</p>
-            <text>Bernard Shoy</text>
+            <small>Bernard Shoy</small>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -26,14 +26,14 @@ function ControlledCarousel() {
             <p>"When you do something noble and beautiful and nobody noticed, do not be sad. 
                For the sun every morning is a beautiful spectacle and yet most of the audience still sleeps."
             </p>
-            <text>John Lennon</text>
+            <small>John Lennon</small>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
             <div className="d-block w-100"/>
           <Carousel.Caption>
             <p>"Success is the ability to go from failure to failure without losing your enthusiasm."</p>
-            <text>Winston Churchil</text>
+            <small>Winston Churchil</small>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

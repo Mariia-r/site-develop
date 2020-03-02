@@ -10,13 +10,14 @@ class Projects extends React.Component {
                 {this.props.projects.map((item, i) => {
                     return <Link key={i}
                                  to={`/projects/${item.projectId}`}
-                                 className="block-project" 
+                                 className={`block-project${this.props.page == "landing" ? " block-project-landing" : "" }`} 
                                  style={
                                     {"background": `url(${item.images[0]}) 50% 50% no-repeat`,
                                      "backgroundSize": "cover"}
                                 }       
                             >
                                 <span className="project_icon-eye"><TiEyeOutline size={50}/></span>
+                                {this.props.page == "home" && <div className="project__BGOnHover"/>}          
                             </Link>
                 })}
                 <input type="button" value="Load more work" style={{"width": "100%"}}/>

@@ -1,8 +1,7 @@
-import { GiFieldGun } from "react-icons/gi";
 
 let initialState = {
     projects: [
-        {projectId: 1, name: "1", data: "20-10-10", images: [
+        {projectId: 1, name: "Light", data: "20-10-10", images: [
             "https://cdn.pixabay.com/photo/2017/06/29/16/58/spices-2454799_1280.jpg"   
             ]},
         {projectId: 2, name: "2", data: "20-06-08", images: [
